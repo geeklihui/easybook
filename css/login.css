@@ -1,4 +1,4 @@
-﻿*{margin:0;padding:0;font-size:16px;font-family:microsoft yahei}
+*{margin:0;padding:0;font-size:16px;font-family:microsoft yahei}
 html,body{width:100%;height:100%;}
 .main-box{
 	        width:1500px;
@@ -65,23 +65,27 @@ input::-webkit-input-placeholder{
         }
 form button{
 	outline:0;
-	border-radius: 0;
+	border:2px solid rgba(0,0,0,.4);
+	border-radius:0;
+	background-color: rgba(0,0,0,.8);
 	color:#fff;
 	padding:10px 15px;
-	width:200px;
+	width:220px;
 	cursor:pointer;
 	font-family:microsoft yahei,Arial,sans-serif;
-	font-size:16px;
+	font-size:20px;
 	font-weight:800;
 }
 form button:hover{
-	border-radius: 0;
+	outline:0;
 	border:2px solid #CFAC66;
+	border-radius:0;
+	background-color: rgba(0,0,0,.7);
+	color:#fff;
+	padding:10px 15px;
+	width:220px;
+	cursor:pointer;
+	font-family:microsoft yahei,Arial,sans-serif;
+	font-size:20px;
+	font-weight:800;
 }
-.btn-black {
-	background-color: rgba(0,0,0,.6);
-}
-.btn-border {
-	display: inline-block;
-	margin: 5px;
-}	
