@@ -10,17 +10,17 @@
 </head>
 <body>
 <%
-String utel = request.getParameter("utel");
+String uname = request.getParameter("uname");
 String upwd = request.getParameter("upwd");
-Login login = new Login(utel,upwd);
+Login login = new Login(uname,upwd);
 LoginDao dao = new LoginDao();
 int result = dao.login(login);
 if(result > 0){
-	session.setAttribute("utel", utel);
+	session.setAttribute("uname", uname);
 	response.sendRedirect("index.jsp");
 }
 else {
-	out.print("<script>alert('手机号或密码错误，请重试！'); window.location='login.jsp' </script>");
+	out.print("<script>alert('用户名或密码错误，请重试！'); window.location='login.jsp' </script>");
 	//response.sendRedirect("login.jsp");
 }
 

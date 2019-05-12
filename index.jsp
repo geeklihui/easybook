@@ -36,8 +36,8 @@ String denglu;
 String denglua;
 %>
 <%
-String tel = (String)session.getAttribute("utel");
-if(tel!=null){
+String uname = (String)session.getAttribute("uname");
+if(uname!=null){
 	denglu="<a href=logout.jsp>退出</a>";
 	denglua="person.jsp";
 }

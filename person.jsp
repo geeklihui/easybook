@@ -18,7 +18,7 @@
 <!--  Bootstrap4 核心 JavaScript 文件 -->
 <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="css/index.css?0215">
+<link rel="stylesheet" type="text/css" href="css/bookall.css?003">
 <link rel="icon" href="img/smallico.ico" type="image/x-icon" />
 
 </head>
@@ -34,8 +34,8 @@ String denglu;
 String denglua;
 %>
 <%
-String tel = (String)session.getAttribute("utel");
-if(tel!=null){
+String uname = (String)session.getAttribute("uname");
+if(uname!=null){
 	denglu="<a href=logout.jsp>退出</a>";
 	denglua="person.jsp";
 }
@@ -49,6 +49,70 @@ else{
 <a href="<%=denglua%>" style="margin-left:40px;"><img src="img/m/user.svg"style="width:80px;height:80px;" ></a></div>
 <div class="qrtext" style="padding-left:1255px;"><a target="blank" href="introm.html">手机扫码上安图</a><a href="<%=denglua%>"style="margin-left:57px;"><%=denglu%></a>
 </div>
+<div class="book-box" style="margin-top:80px;">
+
+<div class="box-title" style="background-color:#CFAC66;">
+订单中心
+</div>
+
+<div class="container" style="width:1500px;margin:0 0px 0 -35px;">
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th width="150px" style="word-wrap:break-word">用户名</th>
+        <th width="150px" style="word-wrap:break-word">订单ID</th>
+        <th width="250px" style="word-wrap:break-word">下单时间</th>
+        <th width="650px" style="word-wrap:break-word">订单内容</th>
+        <th width="150px" style="word-wrap:break-word">订单总价</th>
+        <th width="150px" style="word-wrap:break-word">订单物流</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>00001</td>
+        <td>2019-04-20 07:30:30</td>
+        <td>百年中华文学史论(1898-1999) * 1</td>
+        <td>¥22.90</td>
+        <td>已到货</td>
+      </tr>
+      <tr>
+      <td>John</td>
+        <td>00002</td>
+        <td>2019-04-22 15:30:30</td>
+        <td>阿加莎.克里斯蒂侦探推理系列:大象的证词 * 1</td>
+        <td>¥12.70</td>
+        <td>运输中<br><a href="#">点击查看物流</a></td>
+      </tr>
+      <tr>
+      <td>John</td>
+        <td>00003</td>
+        <td>2019-04-22 08:30:30</td>
+        <td>不可能犯罪诊断书-I * 1</td>
+        <td>¥28.00</td>
+        <td>待发货</td>
+      </tr>
+
+    </tbody>
+  </table>
+  <table class="table">        
+  
+<tbody>
+ <tr>
+<td>没有更多啦！快去买买买！</td>
+</tr>
+</tbody>
+
+</table>
+
+
+
+</div>
+</div>
+
+
+
 </div>
 
 

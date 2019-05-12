@@ -36,8 +36,8 @@
 	<img src="../easybook/img/easybookico.png" style="width:30%;height:20%;margin-top:57px;">
 	</a>
 		<h1>安图 - 注册</h1>
-			<form action="newuser.jsp" class="form" method="post">
-				<input type="tel" placeholder="手机号" name="utel" value=""required autofocus>
+			<form action="registercheck.jsp" class="form" method="post">
+				<input type="tel" placeholder="用户名" name="uname" value=""required autofocus>
 				<input type="password" placeholder="密码" name="upwd" required>
 				<div id="code" style="margin-bottom:10px;">
 				<a href="login.jsp">已有帐号？去登录</a>
