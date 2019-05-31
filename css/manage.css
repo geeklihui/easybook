@@ -1,0 +1,36 @@
+*{margin:0;padding:0;font-family:microsoft yahei}
+html,body{width:100%;height:100%;}
+
+.head-box{
+	width:1500px;height:100px;
+	margin:50px auto 0 auto;
+	border:1dx solid #CFAC66;
+	}
+.head-box  a{
+	color:#CFAC66;font-weight:600;text-decoration:none;
+	line-height:20px;
+	font-size: 30px;
+	}
+.head-box  a:hover{color:#000;text-decoration:none;}
+.book-box{
+	width:1500px;
+	background-color:#fff;
+	margin:20px auto 0 auto;
+	box-shadow:0 4px 3px rgba(0,0,0,0.4);
+}
+
+.book-box .box-title{
+	height: 64px;
+	line-height: 66px;
+	font-size: 25px;
+	font-weight:800;
+	color:#fff;
+	text-align:center;
+	box-shadow:0 2px 2px rgba(0,0,0,0.2);
+}
+.table{
+	table-layout:fixed;
+	width:100%;
+	word-wrap:break-word;
+	
+}

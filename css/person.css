@@ -7,7 +7,7 @@ html,body{width:100%;height:100%;}
 	border:1dx solid #CFAC66;
 	}
 
-.head-box input{
+.head-box search{
 	width:500px;height:50px;
 	margin:0 0 0 180px;
 	border:4px solid rgba(0,0,0,.4);
@@ -34,25 +34,13 @@ html,body{width:100%;height:100%;}
 	display:inline;
 	text-align:center;}
 
-a{
+.head-box .qrtext a{
 	color:#CFAC66;font-weight:600;text-decoration:none;
 	line-height:20px;
 	}
-a:hover{color:#000;text-decoration:none;}
+.head-box .qrtext a:hover{color:#000;text-decoration:none;}
 
-.banner-box{
-	background: url(../img/bg.png);
-	width:1500px;height:600px;
-	margin:50px auto 5px auto;
-	
-}
 
-.banner-box .table-box{
-	width:300px;height:600px;
-	background-color:rgba(0,0,0,0.2);
-	text-align:center;
-	
-}
 
 @keyframes bg
 {
@@ -68,7 +56,7 @@ to{width:1200px;
 height:600px;}
 }
 
-@-webkit-keyframes myfirst /* Safari ∫Õ Chrome */
+@-webkit-keyframes myfirst /* Safari ¬∫√ç Chrome */
 {
 from{width:0px;height:0px;}
 to{width:1200px;
@@ -82,26 +70,25 @@ to{width:1200px;
 height:600px;}
 }
 
-.menu-item{
-	height: 64px;
-	line-height: 66px;
-	font-size: 25px;
-	position: relative;
-	
-}
 .book-box{
 	width:1500px;height:400px;
 	background-color:#fff;
 	margin:50px auto 0 auto;
 	box-shadow:0 4px 3px rgba(0,0,0,0.4);
 }
-
+.table{
+	margin:0 0 0 20px;
+	table-layout: fixed;
+	word-break: break-all;
+	 word-wrap: break-word;
+	width:1500px;
+	text-align:center;
+	}
 .book-box .box-title{
 	height: 64px;
 	line-height: 66px;
 	font-size: 25px;
 	font-weight:800;
-	margin:0 1300px 0 30px;
 	color:#fff;
 	text-align:center;
 	box-shadow:0 2px 2px rgba(0,0,0,0.2);
@@ -109,9 +96,8 @@ height:600px;}
 
 
 .about-box{
-	width:1500px;height:50px;	margin:70px auto;
-	text-align:center;	
-	font-size: 25px;
-	font-weight:800;
+	width:1500px;height:500px;
+	background-color:rgba(0,0,0,0.2);
+	margin:50px auto;
 	
 }

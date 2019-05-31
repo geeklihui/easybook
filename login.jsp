@@ -36,11 +36,11 @@
 	<img src="../easybook/img/easybookico.png" style="width:30%;height:20%;margin-top:57px;">
 	</a>
 		<h1>安图 - 登入</h1>
-			<form action="logincheck.jsp" class="form" method="post">
-				<input type="tel" placeholder="用户名" name="uname" value=""required autofocus>
+			<form action="LoginServlet" class="form" method="post">
+				<input type="text" placeholder="用户名" name="uname" value=""required autofocus>
 				<input type="password" placeholder="密码" name="upwd" required>
 				<div id="code" style="margin-bottom:10px;">
-				<a href="register.jsp">没有帐号？去注册</a>
+				<a href="register.jsp"> 注册帐号</a>
 				</div>
 				<div class="effect-group-container toolbar-2">
 	<div>
@@ -57,17 +57,5 @@
 
 </body>
 
-<script><!--移动端跳转 -->
-if (navigator.platform.indexOf('Win32') >= 0) {
-    // pc
-} else {
-    // phone
-    window.location.href = "../m/mlogin.html";
-}
-</script>
-<script><!--弹出框 -->
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
-});
-</script>
+
 </html>
